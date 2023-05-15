@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+:root {
+  background-color: #2d2d2d;
+  font-family: 'Gugi', cursive;
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 12vw;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+section p {
+  margin: 4em 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.highlighted-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  background: #0CBFFE;
+  background: linear-gradient(to right, #0CBFFE 20%, #FFDD2D 100%, #03F4D5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pop-in {
+  height: min-content;
+  opacity: 0;
+  transition: 0.3s all ease-out;
+  transform: scale(0.8);
+  box-sizing: border-box;
+}
+
+.fade-in {
+  animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    scale: 0.8
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
